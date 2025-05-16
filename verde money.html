@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Money</title>
+    <style>
+        :root {
+            --verde-claro: #7ed957;
+            --verde-medio: #47b26b;
+            --verde-escuro: #26734d;
+            --cinza-claro: #e7f5e9;
+            --cinza-fundo: #f6fbf7;
+            --branco: #fff;
+            --preto: #222;
+            --sombra: 0 2px 8px rgba(39, 174, 96, 0.08);
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--cinza-fundo) 80%, var(--verde-claro) 100%);
+            color: var(--preto);
+        }
+        header {
+            background: var(--verde-claro);
+            color: var(--verde-escuro);
+            padding: 32px 0 16px 0;
+            box-shadow: var(--sombra);
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 20px 0 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--verde-escuro);
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: var(--verde-medio);
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            padding: 0 16px;
+        }
+        section {
+            background: var(--branco);
+            border-radius: 12px;
+            box-shadow: var(--sombra);
+            padding: 32px 28px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--verde-medio);
+            margin-top: 0;
+        }
+        #servicos .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .card {
+            flex: 1 1 250px;
+            background: var(--cinza-claro);
+            border-radius: 10px;
+            box-shadow: 0 1px 5px rgba(39, 174, 96, 0.06);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.15s;
+        }
+        .card:hover {
+            transform: translateY(-6px) scale(1.03);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        form label {
+            font-weight: bold;
+            color: var(--verde-escuro);
+            margin-bottom: 4px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #b0ddb7;
+            border-radius: 4px;
+            font-size: 1em;
+            background: #f8fff9;
+            resize: none;
+        }
+        form textarea {
+            min-height: 80px;
+        }
+        form button {
+            margin-top: 8px;
+            background: var(--verde-medio);
+            color: var(--branco);
+            border: none;
+            border-radius: 4px;
+            padding: 12px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        form button:hover {
+            background: var(--verde-escuro);
+        }
+        #cadastro-login {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        #cadastro-login form {
+            background: var(--cinza-claro);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(39, 174, 96, 0.04);
+            padding: 20px;
+        }
+        @media (max-width: 800px) {
+            main { max-width: 98%; }
+            #cadastro-login { grid-template-columns: 1fr; }
+        }
+        footer {
+            text-align: center;
+            background: var(--verde-escuro);
+            color: var(--cinza-claro);
+            padding: 22px 0;
+            font-size: 1em;
+            margin-top: 40px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verde Money</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#cadastro-login">Cadastro/Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bem-vindo">
+            <h2>Bem-vindo ao Verde Money</h2>
+            <p>A plataforma de reciclagem que transforma resíduos em oportunidades!</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>O Verde Money é uma iniciativa que incentiva a reciclagem e promove a sustentabilidade.</p>
+            <p>Nossa plataforma conecta pessoas e empresas para transformar resíduos em valor econômico.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Coleta Seletiva</h3>
+                    <p>Encontre pontos de coleta próximos a você.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultoria Sustentável</h3>
+                    <p>Receba dicas e informações para reciclar melhor.</p>
+                </div>
+                <div class="card">
+                    <h3>Recompensas</h3>
+                    <p>Ganhe benefícios ao reciclar corretamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="cadastro-login">
+            <form id="cadastro">
+                <h2>Cadastro</h2>
+                <label for="email-cadastro">Email</label>
+                <input type="email" id="email-cadastro" name="email-cadastro" placeholder="seuemail@exemplo.com">
+
+                <label for="usuario-cadastro">Usuário</label>
+                <input type="text" id="usuario-cadastro" name="usuario-cadastro" placeholder="Seu nome de usuário">
+
+                <label for="senha-cadastro">Senha</label>
+                <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Crie uma senha">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <form id="login">
+                <h2>Login</h2>
+                <label for="usuario-login">Usuário</label>
+                <input type="text" id="usuario-login" name="usuario-login" placeholder="Seu nome de usuário">
+
+                <label for="senha-login">Senha</label>
+                <input type="password" id="senha-login" name="senha-login" placeholder="Sua senha">
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Verde Money. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
