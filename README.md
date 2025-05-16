@@ -42,6 +42,53 @@ Para rodar o projeto Verde Money localmente, siga os passos:
 2. **Configurar o banco de dados MySQL:**
 
     * Crie um banco de dados com o nome `verdemoney`.
+  
+      <!-- Veja o código completo na pasta do projeto, esse é um exemplo da estrutura utilizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Money</title>
+    <!-- Estilos CSS personalizados para um visual sustentável, limpo e moderno -->
+</head>
+<body>
+    <header>
+        <h1>Verde Money</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#cadastro-login">Cadastro/Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ...restante da estrutura HTML... -->
+</body>
+</html>
+CREATE TABLE produtos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    preco_por_quilo REAL NOT NULL,
+    categoria TEXT NOT NULL
+);
+
+INSERT INTO produtos (nome, preco_por_quilo, categoria) VALUES 
+('Latinhas de Bebidas', 8.50, 'Metálicos'),
+('Latas de Conservas', 3.00, 'Metálicos'),
+('Potes de Conservas Metálicas', 3.00, 'Metálicos'),
+('Marmitas de Isopor Higienizadas', 1.00, 'Isopor'),
+('Marmitas de Isopor Não Higienizadas', 0.45, 'Isopor'),
+('Garrafas PET', 2.50, 'Plásticos'),
+('Embalagens de Plástico', 2.50, 'Plásticos'),
+('Canudos Plásticos', 2.50, 'Plásticos'),
+('Marmitas Plásticas', 2.50, 'Plásticos'),
+('Papel', 2.00, 'Papel'),
+('Canudos de Papel', 2.00, 'Papel'),
+('Embalagens de Papel', 2.00, 'Papel'),
+('Papelão', 2.00, 'Papel'),
+('Lixo Orgânico', 3.00, 'Orgânico');
     * Configure as credenciais do banco de dados no arquivo de configurações do Django (`settings.py`).
 
 3. **Criar um ambiente virtual (recomendado):**
