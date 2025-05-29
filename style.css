@@ -1,0 +1,278 @@
+/* Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif, Arial, Helvetica;
+    line-height: 1.6;
+    background-color: #eef2f7; /* Fundo geral suave */
+    color: #333;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #28a745; /* Verde principal do Verde Money */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+header h1 i {
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+    color: #cfffdf; /* Verde mais claro para hover */
+    border-bottom: 2px solid #cfffdf;
+}
+
+/* Conteúdo Principal */
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.07);
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e4e8;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section#boas-vindas {
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 2rem;
+}
+section#boas-vindas p {
+    font-size: 1.1rem;
+    color: #555;
+}
+.aviso-prototipo {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #fff3cd; /* Amarelo warning Bootstrap */
+    color: #664d03; /* Texto escuro para contraste */
+    border: 1px solid #ffecb5;
+    border-radius: 4px;
+    font-size: 0.95rem !important; /* Sobrescrever o p anterior */
+}
+.aviso-prototipo strong {
+    font-weight: 600;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    color: #005620; /* Verde escuro para títulos de seção */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #28a745;
+    font-weight: 600;
+}
+h2 i {
+    margin-right: 10px;
+    color: #28a745;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #1e7e34; /* Verde mais escuro */
+    transform: translateY(-1px);
+}
+.btn:active {
+    transform: translateY(0px);
+}
+
+
+/* Lista de Pontos de Coleta */
+#pontosColetaContainer {
+    margin-top: 1rem;
+}
+
+#mensagemSemPontos {
+    color: #777;
+    font-style: italic;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.ponto-coleta-item {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e4e8;
+    border-left: 5px solid #28a745;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ponto-coleta-item h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #005620;
+    font-size: 1.25rem;
+}
+
+.ponto-coleta-item p {
+    margin-bottom: 0.3rem;
+    color: #444;
+    font-size: 0.95rem;
+}
+.ponto-coleta-item p strong {
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Área de Pontos */
+.area-pontos {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #e6ffed; /* Verde bem claro */
+    border-radius: 4px;
+    border: 1px solid #c3e6cb; /* Borda verde */
+    text-align: center;
+}
+
+.area-pontos h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #004d1a; /* Verde mais escuro para o título */
+    font-size: 1.3rem;
+}
+
+#totalPontos {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #28a745;
+}
+.area-pontos small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #343a40; /* Cinza escuro Bootstrap */
+    color: #f8f9fa; /* Texto claro */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem; /* Espaço acima do rodapé */
+    font-size: 0.9rem;
+}
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+/* Media Queries para Responsividade (Exemplo básico) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    .btn {
+        width: 100%;
+        padding: 0.9rem;
+    }
+}
